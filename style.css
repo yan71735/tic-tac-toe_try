@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Patrick+Hand&display=swap');
+body{
+    background-color: #e0f9a5bb;
+    margin: 0;
+    padding:0;
+    font-family: 'Patrick Hand', cursive;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#gameName{
+    margin:1% 0 1% 0;
+    padding:0;
+    font-size: 6vh;
+}
+.rows {
+    display: flex;
+    flex-direction: column;
+    width:27vw;
+    height:27vw;
+    
+}
+.row {
+    display: flex;
+    width:100%;
+    height:calc(27vw/var(--fieldSize))
+}
+.cell {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(27vw / (var(--fieldSize)));
+    height: calc(27vw / (var(--fieldSize)));
+    font-size: calc(27vw / (var(--fieldSize))*0.9);
+    border: 1.5px solid #383020;
+    background-color: #cebdbd;
+    cursor: pointer;
+}
+#turnIndex{
+    height:7vh;
+    font-size: 7vh;
+}
+button{
+    cursor: pointer;
+    border-radius: 5%;
+    border: 3px solid #000;
+    color: #000;
+    font-size:5vh;
+    margin-top:5vh;
+    height: 8vh;
+    width:20vw;
+
+}
